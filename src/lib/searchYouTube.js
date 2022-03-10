@@ -1,7 +1,7 @@
 var searchYouTube = ({key, query, max = 5}, callback) => {
   $.get('https://www.googleapis.com/youtube/v3/search', {
     part: 'snippet',
-    key: 'AIzaSyCdFPxWJvi9su4HJkkr9NpPKVMCKT1N-Bo',
+    key: key,
     q: query,
     maxResults: max,
     type: 'video',

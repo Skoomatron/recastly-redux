@@ -12,5 +12,5 @@ export default createStore(
     currentVideo: exampleVideoData[0],
     VideoList: exampleVideoData,
   }
-    // applyMiddleware(thunk)
+  // applyMiddleware(thunk) doesn't work
 );
