@@ -2,9 +2,8 @@ import { connect } from 'react-redux';
 import Search from './../components/Search.js';
 import handleSearchChange from '../actions/search.js';
 
-// needs to wrap the query
 
-var SearchContainer = () => {};
+var SearchContainer = (handldeSearchInputChange) => {};
 // return { query: reduxStore.query };
 
 
@@ -16,10 +15,4 @@ var SearchContainer = () => {};
 export default SearchContainer;
 
 
-// const VoteContainer = ReactRedux.connect(
-//   // we need to map/translate the data in the redux store to the expected props object
-//   (reduxStoreData) => {
-//     debugger;
-//     // the votes prop comes from reduxStoreData.votes
-//     return { votes: reduxStoreData.votes }; // this object will become props
-//   },
+

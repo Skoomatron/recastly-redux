@@ -1,15 +1,12 @@
 import Redux from 'redux';
 
-var videoListReducer = (state = sampleData, action) => {
+var videoListReducer = (state = [], action) => {
+  console.log(state);
   switch (action.type) {
   case 'CHANGE_VIDEO_LIST':
-    return {
-      videoList: [state, action],
-    };
+    return action.videos;
   default:
-    return {
-      sampleData: []
-    };
+    return state;
   }
   //TODO: define a reducer for the videoList field of our state.
 };

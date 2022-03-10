@@ -1,13 +1,11 @@
 import Redux from 'redux';
 
-var currentVideoReducer = (state, action) => {
+var currentVideoReducer = (state = null, action) => {
   switch (action.type) {
   case 'CHANGE_VIDEO':
-    return {
-      video: [state, action],
-    };
+    return action.video || null;
   default:
-    return null;
+    return state;
   }
 };
 
