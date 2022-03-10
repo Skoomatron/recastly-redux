@@ -1,20 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-/*
-// get access to the super class data states/inherit props
-// currently playing video should
-  - On click of title load video to embedded player
+import React from 'react'; // remove later?
+import PropTypes from 'prop-types'; // remove later?
 
-  States?
-*/
-var changeVideo = (video) => ({
-  //TODO:  Return some action object to change the currently playing video. ffff
-});
+
+
+var changeVideo = (video) => {
+  return {
+    type: 'CHANGE_VIDEO',
+    video: video
+  };
+  //TODO:  Return some action object to change the currently playing video.
+};
 
 export default changeVideo;
 
 
 
-/*
-export const CHANGE_VIDEO = 'CHANGE_VIDEO';
-*/

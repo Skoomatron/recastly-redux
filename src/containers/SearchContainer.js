@@ -4,9 +4,9 @@ import handleSearchChange from '../actions/search.js';
 
 // needs to wrap the query
 
-var SearchContainer = ReactRedux.connect(reduxStore) => {
-  // return { query: reduxStore.query };
-};
+var SearchContainer = () => {};
+// return { query: reduxStore.query };
+
 
 //TODO: define a SearchContainer component which will hook up your action
 // dispatchers with your search component props.

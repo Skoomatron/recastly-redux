@@ -4,24 +4,24 @@ import changeVideo from './../actions/currentVideo.js';
 
 // needs to wrap the video id, etag, and title?
 
-const VideoListContainer = ReactRedux.connect(
-  //   (reduxStore) => {
-  //   return {
-  //     etag: reduxStore.etag,
-  //     id: reduxStore.id,
-  //     title: reduxStore.title
-  //   };
-  // },
-  // (dispatch) => {
-  //   return {
-  //     VideoList: function('something') {
-  //       dispatch({etag: 'something', id: 'something', title: 'something'});
-  //       dispatch(VideoListEntry('something'));
-  //     }
-  //   }
-  // }
+const VideoListContainer = () => {};
+//   (reduxStore) => {
+//   return {
+//     etag: reduxStore.etag,
+//     id: reduxStore.id,
+//     title: reduxStore.title
+//   };
+// },
+// (dispatch) => {
+//   return {
+//     VideoList: function('something') {
+//       dispatch({etag: 'something', id: 'something', title: 'something'});
+//       dispatch(VideoListEntry('something'));
+//     }
+//   }
+// }
 
-};
+
 
 //TODO: define a VideoListContainer component which will hook up your action
 // dispatchers with your VideoList component props.
