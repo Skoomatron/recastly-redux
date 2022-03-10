@@ -6,7 +6,10 @@ import Search from './Search.js';
 class App extends React.Component {
   constructor(props) {
     super(props);
-
+    /* =========== States ===========
+    video array
+    current video
+*/
     this.state = {
       videos: [],
       currentVideo: null

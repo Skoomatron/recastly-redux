@@ -10,6 +10,11 @@ import YOUTUBE_API_KEY from './config/youtube.js';
 //  the rest of your app.
 
 ReactDOM.render(
-  <App API_KEY={YOUTUBE_API_KEY} searchYouTube={searchYouTube} />,
+  <ReactRedux.Provider store={reduxStore}>
+    <App API_KEY={YOUTUBE_API_KEY} searchYouTube={searchYouTube} />,
+  </ReactRedux.Provider>,
   document.getElementById('app')
 );
+
+
+
